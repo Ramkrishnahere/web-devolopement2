@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+table{
+    text-align: left;
+    position: relative;
+    border-collapse: collapse;
+    background-color: bisque;
+}
+td,th{
+    border: 1px solid #999;
+    padding: 20px;
+}
+th{
+    background: brown;
+    color: azure;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+.primary{
+    background-color: black;
+}
+tfoot >tr{
+    background: black;
+    color: blanchedalmond;
+}
+tbody> tr:hover{
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <table> 
+        <caption>Web Courses</caption>
+        <thead>
+            <tr>
+                <th class="primary" scope="col">Website</th>
+                <th scope="col">Certification</th>
+                <th scope="col">Tutor</th>
+                <th scope="col">Top Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <th scope="row">Just Rise</th>
+                <td>Yes</td>
+                <td>Paid and Free</td>
+                <td>Web Devolopement Design</td>
+            </tr>
+            <tr>
+                <th scope="row">JR Academy</th>
+                <td>Yes</td>
+                <td>Paid and Free</td>
+                <td>AI</td>
+            </tr>
+            <tr>
+                <th scope="row">Udemy</th>
+                <td>Yes</td>
+                <td>Paid and Free</td>
+                <td>Python</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total Course</th>
+                <td colspan="4"><i>Why you all Waiting</i></td>
+            </tr>
+        </tfoot>
+    </table>
+   
+    
+</body>
+</html>
